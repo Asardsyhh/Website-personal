@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Login Redesign</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-wrapper">
+    <div class="login-box">
+      <h1>Welcome Back!</h1>
+      <p>Please sign in to continue</p>
+      
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="text" id="email" placeholder="Enter your email or phone number" required>
+          <small class="error-message" id="emailError">Please enter a valid email or phone number.</small>
+        </div>
+        
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Enter your password" required>
+          <small class="error-message" id="passwordError">Password must be between 4 and 60 characters.</small>
+        </div>
+        
+        <button type="submit" class="btn-login">Sign In</button>
+
+        <div class="use-signin-code">
+            <a href="#">Use a Sign-In Code</a>
+          </div>
+          
+        
+        <div class="additional-options">
+          <label>
+            <input type="checkbox" id="rememberMe"> Remember me
+          </label>
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+        
+        <p class="signup-link">New to Netflix? <a href="#">Sign up now</a>.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* Styling dasar untuk keseluruhan halaman */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #141414;
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper untuk form login */
+.login-wrapper {
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading utama */
+.login-wrapper h1 {
+  color: #e50914;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Subheading */
+.login-wrapper p {
+  color: #b3b3b3;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grup input untuk email dan password */
+.input-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #b3b3b3;
+}
+
+/* Efek hover dan fokus pada input */
+.input-group input:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+/* Pesan error */
+.error-message {
+  display: none;
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  text-align: left;
+}
+
+/* Tombol Sign In dengan efek 3D */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+  
+  /* Efek bayangan untuk tampilan 3D */
+  box-shadow: 0px 4px 0px #a80710, 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek saat tombol di-hover */
+.btn-login:hover {
+  background-color: #f40612;
+  box-shadow: 0px 6px 0px #a80710, 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Efek saat tombol ditekan */
+.btn-login:active {
+  box-shadow: 0px 2px 0px #a80710;
+  transform: translateY(2px);
+}
+
+/* Opsi tambahan: Remember me dan Forgot password */
+.additional-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+  margin-top: 1rem;
+}
+
+.additional-options label {
+  display: flex;
+  align-items: center;
+}
+
+.additional-options input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Link Sign Up */
+.signup-link {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+
+.signup-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Opsi "Use a Sign-In Code" */
+.use-signin-code {
+  margin-top: 15px;
+}
+
+.use-signin-code a {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.use-signin-code a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Media query untuk tampilan responsif */
+@media (max-width: 480px) {
+  .login-wrapper {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .login-wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-login {
+    font-size: 0.95rem;
+  }
+
+  .additional-options,
+  .signup-link,
+  .use-signin-code {
+    font-size: 0.85rem;
+  }
+}
